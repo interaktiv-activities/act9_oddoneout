@@ -1,0 +1,206 @@
+/* FONTS */
+@font-face {
+    font-family: Akura;
+    src: url(FONTS/Akura\ Popo.ttf);
+}
+
+@font-face {
+    font-family: Arvo;
+    src: url(FONTS/Arvo/Arvo-Regular.ttf);
+}
+
+@font-face {
+    font-family: Citrus;
+    src: url(FONTS/Citrus\ Gothic/);
+}
+
+/* GAME BOARD ELEMENTS */
+.game-board{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 740px;
+    width: 100%;
+    margin: 30px 0px 100px 0px;
+}
+
+.instructions{
+    color: #FFF;
+    text-align: center;
+    font-family: Arvo;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 10px 0px 0px 0px;
+}
+
+.cluster-prompt{
+    color: #FFF;
+    text-align: center;
+    font-family: Arvo;
+    font-size: 32px;
+    font-weight: 700;
+    margin: 10px 0px 0px 0px;
+}
+
+.score{
+    font-family: Akura;
+    font-size: 32px;
+    margin: 10px 10px 10px 10px;
+    color: #F2B84B;
+}
+
+.choice-menu{
+    display: flex;
+    flex-direction: row;
+    width: 740px;
+    margin: 10px 0px 0px 0px;
+}
+
+.choice-details{
+    display: flex;
+    flex-direction: column;
+    width: 240px;
+}
+
+.choice-btn{
+    width: 240px;
+    border: none;
+    background: none;
+}
+
+.choice-btn:hover{
+    transition-duration: 150ms;
+    transform: translateY(-1.00em);
+}
+
+.choice-btn:active{
+    transition-duration: 150ms;
+    transform: translateY(-0.50em);
+}
+
+.choice-text{
+    color: #FFFFFF;
+    text-align: center;
+    font-family: Arvo;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 10px;
+}
+
+.choice-img{
+    width: 220px;
+    height: 220px;
+}
+
+/* TABLET MEDIA QUERIES */
+@media only screen and (max-width: 768px){
+    .game-board{
+        max-width: 450px;
+    }
+    
+    .instructions{
+        font-size: 14px;
+        width: 420px;
+        margin: 15px 0px 0px 0px;
+    }
+
+    .cluster-prompt{
+        font-size: 24px;
+        margin: 7px 0px 0px 0px;
+    }
+    
+    .choice-menu{
+        flex-direction: column;
+        width: 420px;
+    }
+    
+    .choice-details{
+        flex-direction: row;
+        align-items: center;
+        width: 420px;
+    }
+    
+    .choice-btn{
+        width: 210px;
+        border: none;
+        background: none;
+        margin: 10px;
+    }
+    
+    .choice-btn:hover{
+        transition-duration: 150ms;
+        transform: translateY(-1.00em);
+    }
+    
+    .choice-btn:active{
+        transition-duration: 150ms;
+        transform: translateY(-0.50em);
+    }
+    
+    .choice-text{
+        font-size: 16px;
+        margin: 0px 0px 0px 0px;
+        width: 200px;
+    }
+    
+    .choice-img{
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media only screen and (max-width: 428px){
+    .game-board{
+        max-width: 330px;
+    }
+    
+    .instructions{
+        font-size: 12px;
+        width: 330px;
+        margin: 0px 0px 0px 0px;
+    }
+
+    .cluster-prompt{
+        font-size: 24px;
+        margin: 7px 0px 0px 0px;
+    }
+    
+    .choice-menu{
+        flex-direction: column;
+        width: 330px;
+    }
+    
+    .choice-details{
+        flex-direction: row;
+        align-items: center;
+        width: 330px;
+    }
+    
+    .choice-btn{
+        width: 120px;
+        border: none;
+        background: none;
+        margin: 10px;
+    }
+    
+    .choice-btn:hover{
+        transition-duration: 150ms;
+        transform: translateY(-1.00em);
+    }
+    
+    .choice-btn:active{
+        transition-duration: 150ms;
+        transform: translateY(-0.50em);
+    }
+    
+    .choice-text{
+        font-size: 16px;
+        margin: 0px 0px 0px 0px;
+        width: 200px;
+    }
+    
+    .choice-img{
+        width: 120px;
+        height: 120px;
+    }
+}

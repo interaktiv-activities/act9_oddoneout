@@ -30,6 +30,10 @@ body{
     align-items: center;
 }
 
+b{
+    color: #E4BD78;
+}
+
 /* START SCREEN ELEMENTS */
 .start-screen{
     display: flex;
